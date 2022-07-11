@@ -1,8 +1,23 @@
+/* Bogliano Milagros Vanesa, Ejercicio 6. */
 function mostrar()
 {
-	//tomo la edad  
-	alert("ok");
+	let edad;
 
+	edad = parseInt(document.getElementById("txtIdEdad").value);
 
-
-}//FIN DE LA FUNCIÓN
+	if(edad <= 12){
+		alert("Sos un niño");
+	}else if(edad <= 17){
+		alert("Sos un adolescente");
+	}else{
+		alert("Sos mayor de 18 años");
+	}
+	/* SIN ANIDAR
+	if(edad >= 18){
+		alert("Sos mayor de 18 años");
+	} if(edad >= 13 && edad <= 17){
+		alert("Sos un adolescente");
+	} if(edad <= 13){
+		alert("Sos un niño");
+	}*/
+}
