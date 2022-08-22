@@ -1,4 +1,4 @@
-/*
+/* Bogliano Milagros Vanesa, Ejercicio 10.
 Al presionar el botón pedir  números  
 hasta que el usuario quiera, mostrar:
 1-Suma de los negativos.

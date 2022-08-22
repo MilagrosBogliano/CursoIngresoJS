@@ -1,12 +1,13 @@
-/*
+/* Bogliano Milagros Vanesa, Ejercicio 5.
 Al presionar el botón pedir un sexo
 'f' para femenino, 'm' para masculino.*/
 function mostrar()
 {
-	var sexoIngresado;
-	sexoIngresado = prompt("ingrese f ó m .");
+	let sexo;
+	
+	do{
+	sexo = prompt("ingrese f ó m .");
+	document.getElementById("txtIdSexo").value = sexo;
+	} while(sexo != "f" && sexo != "m");
 
-
-
-	txtIdSexo.value=sexoIngresado;
-}//FIN DE LA FUNCIÓN
+}

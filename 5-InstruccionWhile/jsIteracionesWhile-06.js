@@ -1,13 +1,18 @@
+//Bogliano Milagros Vanesa, Ejercicio 6.
 function mostrar()
 {
-	var contador;
-	var acumulador;
-	var numeroIngresado;
+	let numero;
+	let i = 0;
+	let acumulador = 0;
+	let promedio;
 
-	contador=0;
-	acumulador=0;
-	
-	
-	txtIdSuma.value=acumulador;
-	txtIdPromedio.value=acumulador/5;
-}//FIN DE LA FUNCIÓN
+	while( i < 5){
+		i = i + 1;
+		numero = parseFloat(prompt("Ingrese un numero"));
+		acumulador = acumulador + numero;
+	}
+
+	promedio = acumulador / i;
+	document.getElementById("txtIdSuma").value = acumulador;
+	document.getElementById("txtIdPromedio").value = promedio;
+}

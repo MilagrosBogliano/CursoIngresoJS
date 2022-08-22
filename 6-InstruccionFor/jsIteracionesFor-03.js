@@ -1,8 +1,13 @@
+/* Bogliano Milagros Vanesa, Ejercicio 3.
+Al presionar el botón pedir la cantidad de veces que quiero repetir el mensaje "Hola UTN FRA" */
 function mostrar()
 {
+	let repetciones;
+	let i;
 
-	var repetciones = prompt("ingrese el número de repeticiones");
-	alert("ok");
-
-
-}//FIN DE LA FUNCIÓN
+	repetciones = prompt("Ingrese la cantidad de repeticiones");
+	
+	for(i = 0; i <= repetciones; i ++){
+		document.write("<br>" + "Hola UTN FRA");
+	}
+}

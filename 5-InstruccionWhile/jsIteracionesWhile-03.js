@@ -1,8 +1,17 @@
-/*
+/* Bogliano Milagros Vanesa, Ejercicio 3.
 al presionar el botón pedir la CLAVE (ayuda: es utn750)*/
 function mostrar()
 {
-	var claveIngresada;
-	claveIngresada = prompt("ingrese el número clave.");
+	let clave;
 	
-}//FIN DE LA FUNCIÓN
+	clave = prompt("ingrese el número clave.");
+	
+	while(clave != "utn750"){
+		clave = prompt("Ingrese devuelta la clave");
+	}
+
+	/*do{
+		prompt("Ingrese la clave")
+	} while(clave != "utn750");*/
+
+}

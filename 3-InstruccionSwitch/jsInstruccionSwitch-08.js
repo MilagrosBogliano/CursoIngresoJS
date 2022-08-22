@@ -1,6 +1,19 @@
+//Bogliano Milagros Vanesa, Ejercicio 8.
 function mostrar()
 {
-	var destinoIngresado =txtIdDestino.value;
-	alert(destinoIngresado);
+	let destino;
 
-}//FIN DE LA FUNCIÓN
+	destino = document.getElementById("txtIdDestino").value;
+	
+	switch(destino){
+		case "Bariloche":
+		case "Ushuaia":
+			mensaje =  "frio";
+		break;
+		case "Mar del plata":
+		case "Cataratas":
+			mensaje = "calor";
+		break;
+	}
+	alert("Hace " + mensaje);
+}
